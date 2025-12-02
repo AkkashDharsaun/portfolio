@@ -38,7 +38,7 @@ const Main = styled.div`
   color: ${(props) => props.theme.text};
   padding: 2rem;
   width: 50vw;
-  height: 73vh;;
+  height: 73vh;
   z-index: 3;
   line-height: 1.5;
   display: flex;
@@ -66,17 +66,16 @@ const AboutPage = () => {
           <img src={astronaut} alt="spaceman" />
         </Spaceman>
         <Main>
-          I’m Akkash Dharsaun, a passionate Full Stack Developer from India,
-          creating simple yet impactful digital experiences. I enjoy working
-          across the entire stack—designing clean, intuitive front-end
-          interfaces and building powerful, scalable back-end systems.
-          <br /> <br />
-          I love exploring new technologies, experimenting with ideas, and
-          turning concepts into fully functional products. For me, development
-          is not just about writing code—it’s about crafting experiences that
-          are both beautiful and impactful
-          <br /> <br />I believe everything is an Art when you put your
-          consciousness in it. You can connect with me via social links.
+          I’m Akkash Dharsaun, a Full Stack & React.js Developer from India with
+          experience in building responsive front-end interfaces and efficient
+          backend solutions using React, Python, Flask, java, Firebase, and MySQL.
+          <br />
+          <br />
+          I’m passionate about crafting digital experiences that are fast,
+          intuitive, and built with clean, maintainable code.
+          <br />
+          <br />
+          Feel free to connect with me through my social links.
         </Main>
 
         <BigTitle text="ABOUT" top="10%" left="5%" />

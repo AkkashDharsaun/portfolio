@@ -26,9 +26,9 @@ const Main = styled.div`
 border: 2px solid ${props => props.theme.text};
 color: ${props => props.theme.text};
 background-color: ${props => props.theme.body};
-padding: 2rem;
+padding: 1rem;
 width: 30vw;
-height: 60vh;
+height: 80vh;
 z-index:3;
 line-height: 1.5;
 cursor: pointer;
@@ -83,65 +83,62 @@ ul,p{
 `
 
 const MySkillsPage = () => {
-    return (
-        <ThemeProvider theme={lightTheme}>
-<Box>
+  return (
+    <ThemeProvider theme={lightTheme}>
+      <Box>
+        <LogoComponent theme="light" />
+        <SocialIcons theme="light" />
+        <PowerButton />
+        <ParticleComponent theme="light" />
 
-<LogoComponent theme='light'/>
-<SocialIcons theme='light'/>
-<PowerButton />
-<ParticleComponent theme='light' />
-            <Main>
-<Title>
-    <Design width={40} height={40} /> Designer
-</Title>
-<Description>
-I love to create websites which speaks, Keep it clean, minimal and simple.
-</Description>
-<Description>
-<strong>I like to Develop</strong>
-<ul>
-    <li>
-        Web sites
-    </li>
-    <li>
-        Mobile Apps
-    </li>
-</ul>
-</Description>
-<Description>
-</Description>
+        <Main>
+          <Title>
+            <Design width={40} height={40} /> Designer
+          </Title>
 
-            </Main>
-            <Main>
-<Title>
-    <Develope width={40} height={40} /> Frontend Developer
-</Title>
-<Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-</Description>
-<Description>
-<strong>Skills</strong>
-<p>
-Html, Css(Sass,Tailwind), Js, React, php, python,java , Firebase,mysql etc.
-</p>
-</Description>
-<Description>
-<strong>Tools</strong>
-<p>
-VScode, Github, Codepen etc.
-</p>
-</Description>
+          <Description>
+            I design clean, minimal, and accessible websites that focus on clarity
+            and user experience.
+          </Description>
 
-            </Main>
+          <Description>
+            <strong>I build</strong>
+            <ul>
+              <li>Responsive websites</li>
+              <li>Mobile-first web apps</li>
+            </ul>
+          </Description>
+        </Main>
 
-            <BigTitle text="SKILLS" top="80%" right="30%" />
+        <Main>
+          <Title>
+            <Develope width={40} height={80} /> Frontend Developer
+          </Title>
 
-        </Box>
+          <Description>
+            I value the brand and business goals behind every project and enjoy
+            bringing ideas to life with thoughtful UI and solid code.
+          </Description>
 
-        </ThemeProvider>
-        
-    )
+          <Description>
+            <strong>Skills</strong>
+            <p>
+              HTML, CSS (Sass, Tailwind), JavaScript, React, Redux, Python,
+              Flask, Firebase, MySQL
+            </p>
+          </Description>
+
+          <Description>
+            <strong>Tools</strong>
+            <p>VS Code, Git & GitHub, CodePen, Chrome DevTools</p>
+          </Description>
+        </Main>
+
+        <BigTitle text="SKILLS" top="80%" right="30%" />
+      </Box>
+    </ThemeProvider>
+  )
 }
+
 
 export default MySkillsPage

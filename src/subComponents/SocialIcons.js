@@ -36,7 +36,7 @@ const socialLinks = [
   },
   {
     icon: <Twitter width={25} height={25} />,
-    link: "https://twitter.com/code_bucks"
+    link: "https://twitter.com/code_bucks"  
   },
   {
     icon: <Linkedin width={25} height={25} />,

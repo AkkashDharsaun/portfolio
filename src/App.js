@@ -7,7 +7,6 @@ import GlobalStyle from "./globalStyles";
 //Components
 import Main from "./components/Main";
 import AboutPage from "./components/AboutPage";
-import BlogPage from "./components/BlogPage";
 import WorkPage from "./components/WorkPage";
 import MySkillsPage from "./components/MySkillsPage";
 import SoundBar from "./subComponents/SoundBar";
@@ -32,8 +31,6 @@ function App() {
             <Route path="/" element={<Main />} />
 
             <Route path="/about" element={<AboutPage />} />
-
-            <Route path="/blog" element={<BlogPage />} />
 
             <Route path="/work" element={<WorkPage />} />
 
